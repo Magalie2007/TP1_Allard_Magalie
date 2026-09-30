@@ -1,0 +1,27 @@
+body {
+    background-color: #fff0f6;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: #5c4a52;
+    margin: 40px;
+}
+/*  titre */
+h1 {
+    color: #d4779b;
+}
+/*  sous-titres */
+h2 {
+    color: #d4779b;
+}
+/*  image */
+img {
+    width: 400px;
+    max-width: 90%;
+    border-radius: 15px;
+}
+/* paragraphe*/
+p {
+    max-width: 700px;
+    margin: 15px auto;
+   
+}

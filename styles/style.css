@@ -1,0 +1,304 @@
+body {
+    margin: 0; 
+    background-color: #fff7fb; 
+    color: #3d2632;
+    font-size: 1rem; 
+}
+
+
+/* MENU */
+
+/* ENTETE */
+.entete {
+    position: fixed; 
+    top: 0;
+    left: 0; 
+    right: 0; 
+
+    height: 5rem; 
+    background-color: #f7bfd7; 
+
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: center; 
+
+    padding: 0 2rem; 
+    z-index: 10; 
+}
+
+/* logo */
+.logo {
+    font-size: 1.5rem; 
+    color: #3d2632; 
+}
+
+/*  liens de navigation */
+.navigation {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: center; 
+    align-items: center; 
+    gap: 1.5rem; 
+}
+
+/*  liens du menu */
+.navigation a {
+    color: #3d2632; 
+    font-size: 1rem; 
+}
+
+/* hover */
+.navigation a:hover {
+    color: #d94f87;
+}
+
+/* changement de couleur*/
+.navigation a:focus-visible {
+    color: #d94f87;
+}
+
+
+/* MENU HAMBURGER */
+
+
+#bouton-menu {
+    display: none; 
+    background-color: #f7bfd7; 
+    border: none; 
+    color: #3d2632; 
+    font-size: 2rem; 
+  
+}
+
+
+
+
+/*  contenu principal */
+.conteneur {
+    width: 90%; 
+    max-width: 1280px; 
+    margin: 0 auto; 
+    padding-top: 8rem; 
+    padding-bottom: 3rem; 
+}
+
+/*  titres */
+h1 {
+    color: #d94f87; 
+    font-size: 3rem; 
+}
+
+/*  sous-titres */
+h2 {
+    color: #b83f70; 
+    font-size: 1.5rem; 
+}
+
+
+/* GRILLE DES JEUX */
+
+/* cartes de jeux */
+.grille-jeux {
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    gap: 1rem; 
+}
+
+
+/* CARTES */
+
+/*  carte de jeu */
+.carte-jeu {
+    width: 14%; 
+    padding: 0.75rem; 
+    background-color: white; 
+    border: 0.1rem solid #f5c2d8; 
+    border-radius: 1rem; 
+    color: #3d2632; 
+}
+
+/* taille des images */
+.carte-jeu img {
+    width: 100%; 
+    height: 10rem; 
+}
+
+/*  titres des cartes */
+.carte-jeu h3 {
+    color: #d94f87; 
+    font-size: 1rem; 
+}
+
+/* descriptions des cartes */
+.carte-jeu p {
+    font-size: 0.9rem; 
+}
+
+/* hover */
+.carte-jeu:hover {
+    background-color: #ffe1ed;
+}
+
+
+.carte-jeu:focus-visible {
+    border: 0.2rem solid #d94f87;
+}
+
+
+/* PAGE DU JEU */
+
+
+.retour {
+    color: #d94f87; 
+    font-size: 1rem; 
+}
+
+
+.retour:hover {
+    color: #b83f70;
+}
+
+
+.retour:focus-visible {
+    color: #b83f70;
+}
+
+/* informations du jeu */
+.information-jeu {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: flex-start; 
+    align-items: flex-start;
+    gap: 2rem; 
+    background-color: white; 
+    padding: 2rem; 
+    border: 0.1rem solid #f5c2d8; 
+    border-radius: 1rem; 
+}
+
+/*  largeur image du jeu */
+.information-jeu img {
+    width: 45%;
+}
+
+/* largeur  description du jeu */
+.description-jeu {
+    width: 50%;
+}
+
+/*  bouton */
+.bouton {
+    background-color: #ff69a6;
+    color: white; 
+    border: none; 
+    border-radius: 1rem; 
+    padding: 0.75rem 1.5rem; 
+    font-size: 1rem; 
+}
+
+/* hover */
+.bouton:hover {
+    background-color: #d94f87;
+}
+
+
+.bouton:focus-visible {
+    border: 0.2rem solid #3d2632;
+}
+
+
+/* FOOTER */
+
+/* footer */
+footer {
+    background-color: #f7bfd7; 
+    text-align: center; 
+    padding: 2rem; 
+}
+
+
+/* MOBILE */
+
+/* écrans de 700 px ou moins */
+@media screen and (width <= 700px) {
+
+   
+    .entete {
+        padding: 0 1rem;
+    }
+
+    /* bouton hamburger */
+    #bouton-menu {
+        display: block;
+    }
+
+    /*  menu mobile */
+    .navigation {
+        display: flex; 
+        position: absolute; 
+        top: 5rem; 
+        left: 0; 
+        right: 0; 
+
+        background-color: #f7bfd7; 
+
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center; 
+        gap: 1.5rem; 
+
+        padding: 1.5rem 0; 
+    }
+
+    /* Cache le menu  */
+    .navigation.closed {
+        display: none;
+    }
+
+    
+    .conteneur {
+        width: 90%;
+        padding-top: 7rem;
+    }
+
+    /* titre principal */
+    h1 {
+        font-size: 2rem;
+    }
+
+    /* cartes de jeux  */
+    .grille-jeux {
+        flex-direction: column;
+    }
+
+    /* les cartes sur mobile */
+    .carte-jeu {
+        width: 90%;
+    }
+
+    /*  hauteur des images sur mobile */
+    .carte-jeu img {
+        height: 12rem;
+    }
+
+    /* Place l'image et la description */
+    .information-jeu {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+   
+    .information-jeu img {
+        width: 100%;
+    }
+
+    
+    .description-jeu {
+        width: 100%;
+    }
+
+}
